@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18279BF823841B8500367909 /* XDSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 18279BF623841B8500367909 /* XDSDropDownMenu.m */; };
+		185881952367D11B0001B764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881942367D11B0001B764 /* AppDelegate.m */; };
+		185881982367D11B0001B764 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881972367D11B0001B764 /* ViewController.m */; };
+		1858819B2367D11B0001B764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185881992367D11B0001B764 /* Main.storyboard */; };
+		1858819D2367D1250001B764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1858819C2367D1250001B764 /* Assets.xcassets */; };
+		185881A02367D1250001B764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1858819E2367D1250001B764 /* LaunchScreen.storyboard */; };
+		185881A32367D1250001B764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881A22367D1250001B764 /* main.m */; };
+		185881AB2367E2AA0001B764 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185881AA2367E2AA0001B764 /* MapKit.framework */; };
+		185881B42367FFF20001B764 /* PointAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881B32367FFF20001B764 /* PointAnnotationView.m */; };
+		185881B7236801320001B764 /* PointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881B6236801320001B764 /* PointAnnotation.m */; };
+		185881BB236849E10001B764 /* CallOutViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881B9236849E10001B764 /* CallOutViewViewController.m */; };
+		185881BC236849E10001B764 /* CallOutViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185881BA236849E10001B764 /* CallOutViewViewController.xib */; };
+		185881BE23697FB40001B764 /* hurricane-irma-points.csv in Resources */ = {isa = PBXBuildFile; fileRef = 185881BD23697FB40001B764 /* hurricane-irma-points.csv */; };
+		185881C023697FC10001B764 /* hurricane-harvey-points.csv in Resources */ = {isa = PBXBuildFile; fileRef = 185881BF23697FC10001B764 /* hurricane-harvey-points.csv */; };
+		185881C22369A5120001B764 /* leibniz-locations.csv in Resources */ = {isa = PBXBuildFile; fileRef = 185881C12369A5110001B764 /* leibniz-locations.csv */; };
+		185881C52369A57D0001B764 /* Hurricane.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881C42369A57D0001B764 /* Hurricane.m */; };
+		185881C82369B20E0001B764 /* Leibniz.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881C72369B20E0001B764 /* Leibniz.m */; };
+		185881CC237FD20C0001B764 /* AnalyseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185881CB237FD20C0001B764 /* AnalyseViewController.m */; };
+		1F1977B091DB9134F918DA76 /* libPods-BigSpatialData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01951FF359A2F9E4FD5D3560 /* libPods-BigSpatialData.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01951FF359A2F9E4FD5D3560 /* libPods-BigSpatialData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BigSpatialData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D73A07A01851F9F21FBCBC5 /* Pods-BigSpatialData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigSpatialData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigSpatialData/Pods-BigSpatialData.debug.xcconfig"; sourceTree = "<group>"; };
+		18279BF623841B8500367909 /* XDSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDSDropDownMenu.m; sourceTree = "<group>"; };
+		18279BF723841B8500367909 /* XDSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDSDropDownMenu.h; sourceTree = "<group>"; };
+		185881902367D11B0001B764 /* BigSpatialData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigSpatialData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185881932367D11B0001B764 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		185881942367D11B0001B764 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		185881962367D11B0001B764 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		185881972367D11B0001B764 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1858819A2367D11B0001B764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1858819C2367D1250001B764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1858819F2367D1250001B764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185881A12367D1250001B764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185881A22367D1250001B764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		185881AA2367E2AA0001B764 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		185881B22367FFF20001B764 /* PointAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointAnnotationView.h; sourceTree = "<group>"; };
+		185881B32367FFF20001B764 /* PointAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointAnnotationView.m; sourceTree = "<group>"; };
+		185881B5236801320001B764 /* PointAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointAnnotation.h; sourceTree = "<group>"; };
+		185881B6236801320001B764 /* PointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointAnnotation.m; sourceTree = "<group>"; };
+		185881B8236849E10001B764 /* CallOutViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallOutViewViewController.h; sourceTree = "<group>"; };
+		185881B9236849E10001B764 /* CallOutViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallOutViewViewController.m; sourceTree = "<group>"; };
+		185881BA236849E10001B764 /* CallOutViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallOutViewViewController.xib; sourceTree = "<group>"; };
+		185881BD23697FB40001B764 /* hurricane-irma-points.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hurricane-irma-points.csv"; sourceTree = "<group>"; };
+		185881BF23697FC10001B764 /* hurricane-harvey-points.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hurricane-harvey-points.csv"; sourceTree = "<group>"; };
+		185881C12369A5110001B764 /* leibniz-locations.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "leibniz-locations.csv"; sourceTree = "<group>"; };
+		185881C32369A57D0001B764 /* Hurricane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hurricane.h; sourceTree = "<group>"; };
+		185881C42369A57D0001B764 /* Hurricane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hurricane.m; sourceTree = "<group>"; };
+		185881C62369B20E0001B764 /* Leibniz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leibniz.h; sourceTree = "<group>"; };
+		185881C72369B20E0001B764 /* Leibniz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Leibniz.m; sourceTree = "<group>"; };
+		185881CA237FD20C0001B764 /* AnalyseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyseViewController.h; sourceTree = "<group>"; };
+		185881CB237FD20C0001B764 /* AnalyseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalyseViewController.m; sourceTree = "<group>"; };
+		BA717247CFA59F2F055317D0 /* Pods-BigSpatialData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigSpatialData.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigSpatialData/Pods-BigSpatialData.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1858818D2367D11B0001B764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185881AB2367E2AA0001B764 /* MapKit.framework in Frameworks */,
+				1F1977B091DB9134F918DA76 /* libPods-BigSpatialData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18279BF123841A1600367909 /* DataResouce */ = {
+			isa = PBXGroup;
+			children = (
+				185881C12369A5110001B764 /* leibniz-locations.csv */,
+				185881BF23697FC10001B764 /* hurricane-harvey-points.csv */,
+				185881BD23697FB40001B764 /* hurricane-irma-points.csv */,
+			);
+			path = DataResouce;
+			sourceTree = "<group>";
+		};
+		18279BF223841A4300367909 /* ViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				185881962367D11B0001B764 /* ViewController.h */,
+				185881972367D11B0001B764 /* ViewController.m */,
+				185881B8236849E10001B764 /* CallOutViewViewController.h */,
+				185881B9236849E10001B764 /* CallOutViewViewController.m */,
+				185881CA237FD20C0001B764 /* AnalyseViewController.h */,
+				185881CB237FD20C0001B764 /* AnalyseViewController.m */,
+			);
+			path = ViewContrller;
+			sourceTree = "<group>";
+		};
+		18279BF323841A7500367909 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18279BF723841B8500367909 /* XDSDropDownMenu.h */,
+				18279BF623841B8500367909 /* XDSDropDownMenu.m */,
+				185881B22367FFF20001B764 /* PointAnnotationView.h */,
+				185881B32367FFF20001B764 /* PointAnnotationView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18279BF423841A8600367909 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185881B5236801320001B764 /* PointAnnotation.h */,
+				185881B6236801320001B764 /* PointAnnotation.m */,
+				185881C32369A57D0001B764 /* Hurricane.h */,
+				185881C42369A57D0001B764 /* Hurricane.m */,
+				185881C62369B20E0001B764 /* Leibniz.h */,
+				185881C72369B20E0001B764 /* Leibniz.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18279BF523841AA900367909 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				185881932367D11B0001B764 /* AppDelegate.h */,
+				185881942367D11B0001B764 /* AppDelegate.m */,
+				1858819C2367D1250001B764 /* Assets.xcassets */,
+				185881A22367D1250001B764 /* main.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		185881872367D11B0001B764 = {
+			isa = PBXGroup;
+			children = (
+				185881922367D11B0001B764 /* BigSpatialData */,
+				185881912367D11B0001B764 /* Products */,
+				185881A92367E2AA0001B764 /* Frameworks */,
+				4F2CA806C15D27B45171F9DE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		185881912367D11B0001B764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185881902367D11B0001B764 /* BigSpatialData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185881922367D11B0001B764 /* BigSpatialData */ = {
+			isa = PBXGroup;
+			children = (
+				185881A12367D1250001B764 /* Info.plist */,
+				18279BF523841AA900367909 /* Support */,
+				18279BF423841A8600367909 /* Model */,
+				18279BF323841A7500367909 /* View */,
+				18279BF223841A4300367909 /* ViewContrller */,
+				18279BF123841A1600367909 /* DataResouce */,
+				185881992367D11B0001B764 /* Main.storyboard */,
+				1858819E2367D1250001B764 /* LaunchScreen.storyboard */,
+				185881BA236849E10001B764 /* CallOutViewViewController.xib */,
+			);
+			path = BigSpatialData;
+			sourceTree = "<group>";
+		};
+		185881A92367E2AA0001B764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185881AA2367E2AA0001B764 /* MapKit.framework */,
+				01951FF359A2F9E4FD5D3560 /* libPods-BigSpatialData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F2CA806C15D27B45171F9DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D73A07A01851F9F21FBCBC5 /* Pods-BigSpatialData.debug.xcconfig */,
+				BA717247CFA59F2F055317D0 /* Pods-BigSpatialData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1858818F2367D11B0001B764 /* BigSpatialData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185881A62367D1250001B764 /* Build configuration list for PBXNativeTarget "BigSpatialData" */;
+			buildPhases = (
+				C55B6C1FA40753DE3BF27C3E /* [CP] Check Pods Manifest.lock */,
+				1858818C2367D11B0001B764 /* Sources */,
+				1858818D2367D11B0001B764 /* Frameworks */,
+				1858818E2367D11B0001B764 /* Resources */,
+				B0763F78355190614E943926 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigSpatialData;
+			productName = BigSpatialData;
+			productReference = 185881902367D11B0001B764 /* BigSpatialData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185881882367D11B0001B764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = zzcBjergsen;
+				TargetAttributes = {
+					1858818F2367D11B0001B764 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1858818B2367D11B0001B764 /* Build configuration list for PBXProject "BigSpatialData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185881872367D11B0001B764;
+			productRefGroup = 185881912367D11B0001B764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1858818F2367D11B0001B764 /* BigSpatialData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1858818E2367D11B0001B764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185881BE23697FB40001B764 /* hurricane-irma-points.csv in Resources */,
+				185881BC236849E10001B764 /* CallOutViewViewController.xib in Resources */,
+				185881A02367D1250001B764 /* LaunchScreen.storyboard in Resources */,
+				1858819D2367D1250001B764 /* Assets.xcassets in Resources */,
+				185881C023697FC10001B764 /* hurricane-harvey-points.csv in Resources */,
+				1858819B2367D11B0001B764 /* Main.storyboard in Resources */,
+				185881C22369A5120001B764 /* leibniz-locations.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0763F78355190614E943926 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigSpatialData/Pods-BigSpatialData-resources.sh",
+				"${PODS_ROOT}/ZQAlterField/ZQAlterField/ZQAlterField.xib",
+				"${PODS_ROOT}/ZQAlterField/ZQAlterField/ZQ_Close@2x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZQAlterField.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZQ_Close@2x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigSpatialData/Pods-BigSpatialData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C55B6C1FA40753DE3BF27C3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigSpatialData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1858818C2367D11B0001B764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185881B42367FFF20001B764 /* PointAnnotationView.m in Sources */,
+				185881C82369B20E0001B764 /* Leibniz.m in Sources */,
+				185881982367D11B0001B764 /* ViewController.m in Sources */,
+				185881C52369A57D0001B764 /* Hurricane.m in Sources */,
+				185881A32367D1250001B764 /* main.m in Sources */,
+				185881952367D11B0001B764 /* AppDelegate.m in Sources */,
+				185881CC237FD20C0001B764 /* AnalyseViewController.m in Sources */,
+				18279BF823841B8500367909 /* XDSDropDownMenu.m in Sources */,
+				185881BB236849E10001B764 /* CallOutViewViewController.m in Sources */,
+				185881B7236801320001B764 /* PointAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		185881992367D11B0001B764 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1858819A2367D11B0001B764 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1858819E2367D1250001B764 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1858819F2367D1250001B764 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		185881A42367D1250001B764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		185881A52367D1250001B764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185881A72367D1250001B764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D73A07A01851F9F21FBCBC5 /* Pods-BigSpatialData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK94GJ3SK;
+				INFOPLIST_FILE = BigSpatialData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzcBjergsen.BigSpatialData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		185881A82367D1250001B764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA717247CFA59F2F055317D0 /* Pods-BigSpatialData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK94GJ3SK;
+				INFOPLIST_FILE = BigSpatialData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzcBjergsen.BigSpatialData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1858818B2367D11B0001B764 /* Build configuration list for PBXProject "BigSpatialData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185881A42367D1250001B764 /* Debug */,
+				185881A52367D1250001B764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185881A62367D1250001B764 /* Build configuration list for PBXNativeTarget "BigSpatialData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185881A72367D1250001B764 /* Debug */,
+				185881A82367D1250001B764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185881882367D11B0001B764 /* Project object */;
+}

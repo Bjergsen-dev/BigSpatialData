@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallOutViewViewController">
+            <connections>
+                <outlet property="properTable" destination="JNe-Wl-ys4" id="5Rc-AX-XKe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="7ZZ-fU-Qw2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="callOutViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-Wl-ys4">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="180"/>
+                    <color key="backgroundColor" red="0.0" green="0.51764705879999995" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="JNe-Wl-ys4" secondAttribute="trailing" id="Dx6-Dg-Z3c"/>
+                <constraint firstItem="JNe-Wl-ys4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="F7S-vf-W5N"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="JNe-Wl-ys4" secondAttribute="bottom" id="nEu-vO-qRt"/>
+                <constraint firstItem="JNe-Wl-ys4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yrL-aN-Hrz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-40.409956076134698" y="246.67968749999997"/>
+        </view>
+    </objects>
+</document>
