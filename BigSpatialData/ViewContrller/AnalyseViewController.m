@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labnizLabel;
 @property (weak, nonatomic) IBOutlet UILabel *openLabel;
 @property (weak, nonatomic) IBOutlet UIButton *okBtn;
+@property (weak, nonatomic) IBOutlet UIButton *dataBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *anTypeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *xBtn;
@@ -33,6 +34,8 @@
 @property (nonatomic,assign) CGRect rectOfShow;
 
 @property (nonatomic, strong)  NSArray *dropDownMenuArray;
+@property (nonatomic, strong)  NSDictionary *dataSourceDic;
+@property (nonatomic, strong)  NSDictionary *anTypeDic;
 
 @end
 
@@ -49,33 +52,78 @@
     // Do any additional setup after loading the view.
     _dcolor = _irmaLabel.backgroundColor;
     [self setGestureToLabel:[self arrayOfLabel]];
-    
     [self initTheMapView];
     [self initScrollView];
     [self setButtons];
     [self setArray];
 
-    
-    [self createTimer:[self sortAnnsByTime:[NSMutableArray arrayWithArray:_irmaData]]];
-
-
 }
+
+//返回每个按钮的下拉框内容
+//-(NSArray *)btnDownArray:(UIButton *) btn
 
 
 #pragma mark --IBAction Methods
 
+- (IBAction)dataBtn_Cliked:(id)sender {
+
+    
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        // 处理耗时操作在此次添加
+        NSMutableArray * dataNameArray = [[NSMutableArray alloc] init];
+        NSString * i;
+        for (i in self.dataSourceDic.allKeys) {
+            if ([(NSArray *)[self.dataSourceDic valueForKey:i] count] > 0) {
+                [dataNameArray addObject:i];
+            }
+        }
+        //通知主线程刷新
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //在主线程刷新UI
+            self->antypeDropDownMenu.delegate = self;//代理
+            [self setupDropDownMenu:self->antypeDropDownMenu withTitleArray:dataNameArray andButton:sender andDirection:@"down"];
+            [self hideOtherDropDownMenu:self->antypeDropDownMenu];
+        });
+
+    });
+//    ————————————————
+//    版权声明：本文为CSDN博主「小溪彼岸」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+//    原文链接：https://blog.csdn.net/zww1984774346/article/details/50766995
+    
+    
+    
+    
+}
+
+
 - (IBAction)anTypebtn_Cliked:(id)sender {
-    NSArray *arr = @[@"动画",@"柱状图",@"折线图"];
+    NSArray *arr = [_anTypeDic objectForKey:[[_dataBtn titleLabel] text]];
     antypeDropDownMenu.delegate = self;//代理
     [self setupDropDownMenu:antypeDropDownMenu withTitleArray:arr andButton:sender andDirection:@"down"];
     [self hideOtherDropDownMenu:antypeDropDownMenu];
 }
 
 - (IBAction)xBtn_cliked:(id)sender {
+    NSArray *arr = @[@"1",@"2",@"3"];
+    antypeDropDownMenu.delegate = self;//代理
+    [self setupDropDownMenu:antypeDropDownMenu withTitleArray:arr andButton:sender andDirection:@"down"];
+    [self hideOtherDropDownMenu:antypeDropDownMenu];
+    
 }
 
 - (IBAction)yBtn_cliked:(id)sender {
+    NSArray *arr = @[@"1",@"2",@"3"];
+    antypeDropDownMenu.delegate = self;//代理
+    [self setupDropDownMenu:antypeDropDownMenu withTitleArray:arr andButton:sender andDirection:@"down"];
+    [self hideOtherDropDownMenu:antypeDropDownMenu];
 }
+
+- (IBAction)okBtn_Cliked:(id)sender {
+    
+    [self createTimer:[self sortAnnsByTime:[NSMutableArray arrayWithArray:[_dataSourceDic objectForKey:[[_dataBtn titleLabel] text]]]]];
+}
+
 
 #pragma mark --CustomMethods
 //解析日期的大小
@@ -165,6 +213,20 @@
 }
 
 
+//返回可用的数据源有哪些
+-(void) theUseDataSourceDic{
+    
+    NSMutableDictionary* dic = [[NSMutableDictionary alloc] initWithDictionary:_dataSourceDic];
+    NSString * i;
+    for (i in dic.allKeys) {
+        if ([(NSArray *)[dic valueForKey:i] count] == 0) {
+            [dic removeObjectForKey:i];
+        }
+    }
+    
+    _dataSourceDic = [NSDictionary dictionaryWithDictionary:dic];
+}
+
 
 //点击——showview的放大缩小事件
 -(void) zoomTheShowView:(UIGestureRecognizer *)gr{
@@ -186,6 +248,12 @@
 
 - (void)setArray{
     
+    //加入数据源的数组
+    self.dataSourceDic =@{@"Harvey":_harveyData,@"Irma":_irmaData,@"OPen":_openData,@"Lebniz":_lebnizData};
+    self.anTypeDic =@{@"Harvey":@[@"动画",@"柱状图",@"折线图"],@"Irma":@[@"动画",@"柱状图",@"折线图"],@"OPen":@[@"动画",@"柱状图",@"折线图"],@"Lebniz":@[@"柱状图",@"折线图"]};
+    //g获取有数据的
+    [self theUseDataSourceDic];
+    
     //初始化所有DropDownMenu下拉菜单
     antypeDropDownMenu = [[XDSDropDownMenu alloc] init];
     xDropDownMenu = [[XDSDropDownMenu alloc] init];
@@ -203,11 +271,13 @@
 
 //set the button size
 - (void)setButtons{
-    for(UIButton *btn in @[_anTypeBtn,_xBtn,_yBtn,_overBtn]){
+    for(UIButton *btn in @[_dataBtn,_anTypeBtn,_xBtn,_yBtn,_overBtn]){
+        static int btnTag = 7;
         btn.layer.cornerRadius = 3;
         btn.layer.borderColor = [[UIColor blackColor] CGColor];
         btn.layer.borderWidth = 0.5;
         btn.layer.masksToBounds = YES;
+        [btn setTag:btnTag++];
     }
 }
 

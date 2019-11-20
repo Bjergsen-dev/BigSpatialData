@@ -246,7 +246,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="可视化配置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmG-N4-0aZ">
-                                        <rect key="frame" x="146" y="66" width="213" height="21"/>
+                                        <rect key="frame" x="146" y="8" width="213" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="38"/>
                                         <nil key="textColor"/>
@@ -299,6 +299,9 @@
                                         <state key="normal" title="生成">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="okBtn_Cliked:" destination="hlj-f1-0D5" eventType="touchUpInside" id="OZJ-ej-gg1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd7-6J-n8E">
                                         <rect key="frame" x="328" y="268" width="100" height="40"/>
@@ -308,6 +311,23 @@
                                         </state>
                                         <connections>
                                             <action selector="yBtn_cliked:" destination="hlj-f1-0D5" eventType="touchUpInside" id="6cE-PX-gDi"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数据源：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O77-UX-pBO">
+                                        <rect key="frame" x="77" y="64" width="70" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fn1-Ja-v0y">
+                                        <rect key="frame" x="328" y="55" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Irma">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dataBtn_Cliked:" destination="hlj-f1-0D5" eventType="touchUpInside" id="fVA-e9-8hL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -338,6 +358,7 @@
                     </view>
                     <connections>
                         <outlet property="anTypeBtn" destination="63Y-Pe-azM" id="9X5-bI-Smz"/>
+                        <outlet property="dataBtn" destination="Fn1-Ja-v0y" id="znJ-bw-gka"/>
                         <outlet property="harveyLabel" destination="eKe-bf-ON3" id="TE1-lh-g5U"/>
                         <outlet property="irmaImageView" destination="gDI-jf-P5p" id="XrP-tM-WPA"/>
                         <outlet property="irmaLabel" destination="YYg-dO-tzQ" id="DvJ-UC-5Fg"/>
